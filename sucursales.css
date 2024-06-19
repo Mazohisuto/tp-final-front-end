@@ -1,0 +1,61 @@
+
+    
+    
+    .map-container {
+      height: 200px;
+      width:200px;
+      background-color: #ccc; /* Placeholder para el mapa */
+    }
+
+    .map-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .map-item {
+        width: 32%; /* Ajusta el ancho según sea necesario */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+   
+    /* Estilos Responsivos */
+    @media (max-width: 768px) {
+        .map-item {
+            width: 48%; /* Ancho ajustado para pantallas medianas */
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .map-item {
+            width: 100%; /* Ancho ajustado para pantallas pequeñas */
+        }
+    }
+    
+    
+    .hero-section {
+        height: calc(100vh - 62px); /* Viewport height minus navbar height */
+      background-image: url('fotos/foto1.jpeg');
+      background-size: cover;
+      background-position: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+        
+      }
+     
+    
+    .hero-content h1 {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Alinea al centro */
+    }
+    
+    .hero-content p {
+        flex: 1; /* Ocupa todo el espacio restante */
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-right: 20px; /* Espacio a la derecha del párrafo */
+    }
+    

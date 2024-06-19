@@ -1,0 +1,15 @@
+
+input,
+textarea {
+    padding: 10px; /* Ajustado el padding */
+    border: 0;
+    width: 100%;
+    font-size: 0.8rem; /* Tamaño de fuente ligeramente reducido */
+    background-color: #2d2d2d;
+    color: white;
+    border-radius: 4px;
+}
+
+
+
+

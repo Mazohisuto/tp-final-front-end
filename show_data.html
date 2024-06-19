@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Sent</title>
+</head>
+<body>
+    <h1 align="center">The following information has been sent as your feedback:</h1>
+    <table border="1" align="center" width="50%">
+        <tr>
+            <th align="center">Form Field</th>
+            <th align="center">Field Value</th>
+        </tr>
+        <script>
+            // Obtener los argumentos de la URL
+            var args = location.search.substr(1).split('&');
+            // Recorrer los argumentos para mostrarlos en la tabla
+            for (var i = 0; i < args.length; ++i) {
+                var parts = args[i].split('=');
+                if (parts != null) {
+                    var field = parts[0];
+                    var value = parts[1];
+                    if (value == null) {
+                        value = "null";
+                    } else {
+                        value = decodeURIComponent(value.replace(/\+/g, ' '));
+                    }
+                    document.writeln('<tr><td align="center">' + field + '</td>');
+                    document.writeln('<td align="center">' + value + '</td></tr>');
+                }
+            }
+        </script>
+        <noscript>
+            <tr>
+                <td colspan="2">
+                    <p>You need to turn on Javascript in your browser.</p>
+                </td>
+            </tr>
+        </noscript>
+    </table>
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="window.location.href='home.html'">Volver a Inicio</button>
+    </div>
+</body>
+</html>

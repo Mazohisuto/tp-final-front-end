@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="contacto.css"> 
+    <script>
+        function showMessage() {
+            alert("Mensaje enviado con éxito, nos comunicaremos a la brevedad.");
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                <h1><a href=home.html><img src="fotos/LOGODELICEblancochico.png" alt="Logo Delice"></h1></a>
+                </div>
+                <div class="menu-items">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li class="dropdown">
+                      <a href="#">Recetas</a>
+                      <div class="dropdown-content">
+                        <a href="receta_strawberry.html">Strawberry Shorcake</a>
+                        <a href="receta_cheese.html">Cheesecake</a>
+                        <a href="receta_lemon.html">Lemon Pie</a>
+                      </div>
+                    </li>
+                    <li><a href="acerca_de.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="register.html">Suscribirse</a></li>
+                    <li><a href="sucursales.html">Sucursales</a></li>
+                    <li><a href="clientes.html">Galería</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <form class="form">
+                <h2>Contactanos</h2>
+                <type="Name:"><input size="60" placeholder="Tu nombre aquí"></input><br><br>
+                <type="Email:"><input placeholder="A donde te contactaremos"></input><br><br>
+                <textarea placeholder="Tu mensaje" rows="7" cols="15"></textarea><br><br>
+                <a href="#" class="btn" onclick="showMessage(); return false;">Enviar mensaje</a>
+               
+              </form>
+            
+        </div>
+        <br>  <br>  <br>
+    </section>
+
+    
+    <div class="footer">
+        <a href=https://www.facebook.com><div class="social-icons"><img src="fotos/icono1.png"></a>
+        <a href=https://www.instagram.com><img src="fotos/icono2.png"></a>
+        <a href=https://www.whatsapp.com><img src="fotos/icono3.png"></a>
+        </div>
+        Derechos Reservados &copy; 2024
+    </div>
+    <script src="contacto.js"></script>
+</body>
+</html>
